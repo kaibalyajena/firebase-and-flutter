@@ -1,7 +1,8 @@
+import 'package:firebase_auth/reusalble%20widgets/reusable_widgets.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -81,6 +82,9 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(30))),
               ),
             ),
+            SigninSignupButton(context, true, () {
+              
+            })
           ],
         ),
       ),
